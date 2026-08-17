@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picture Tag</title>
+    <style>
+        /* Tani waxay ka dhigaysaa in sawirku uu la qabsado cabbirka shaashadda */
+        img {
+            width: 100%;
+            max-width: 1200px;
+            height: auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <!-- Picture element -->
+    <picture>
+        <!-- Large screens -->
+        <source media="(min-width: 1200px)"
+                srcset="https://via.placeholder.com/1200x800">
+        <!-- Medium screens -->
+        <source media="(min-width: 760px)"
+                srcset="https://via.placeholder.com/760x512">
+        <!-- Small screens -->
+        <source media="(min-width: 480px)"
+                srcset="https://via.placeholder.com/480x320">
+        <!-- Default image -->
+        <img src="https://via.placeho lder.com/400x300"
+             alt="Responsive image">
+    </picture>
+</body>
+</html>
